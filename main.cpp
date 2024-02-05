@@ -9,9 +9,11 @@ int main(int argc, char const *argv[])
 
     cout << "Ingrese el tipo de llamada 0: Fijo | 1: Celular | 2: Internacional " << endl;
     cin >> tipoLlamada;
+
     switch (tipoLlamada)
     {
     case 0:
+        int prueba = 0;
         costoMinuto = 200;
         break;
 

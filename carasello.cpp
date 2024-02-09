@@ -1,12 +1,22 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
+
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    
-    
-    cout << a << endl;
-    cout << "RAND_MAX para este equipo tiene un valor de:" << RAND_MAX;
+    srand(time(0));
+
+    int resultado = rand() % 2;
+    if (resultado == 0)
+    {
+        cout << "Cara!" << endl;
+    }
+    else
+    {
+        cout << "Sello!" << endl;
+    }
+
     return 0;
 }
